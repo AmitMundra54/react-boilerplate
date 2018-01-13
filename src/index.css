@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+  
+a {
+  color: #fed136;
+} 
+
+a:hover {
+  color: #fec503;
+}
+
+.parallax {
+  /* The image used */
+  /* Full height */
+  height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.font16 {
+  font-size: 16px;  
+}
+.font22 {
+  font-size: 22px;  
+}
+.font50 {
+  font-size: 50px;  
+}
+
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+@media screen and (max-width: 767px) {
+  .font50 {
+    font-size: 30px;
+  }
+}  
+
+
+/* // "start": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js",     */
+
+
+/* old nav */
+
+/*   "start": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject" */
+

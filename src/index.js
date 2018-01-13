@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
+import store from './utils/store';
 
-const title = 'My Minimal React Webpack Babel Setup';
+store.dispatch({type: 'ADD_TODO', text: 'Read the docs'});
+
+store.dispatch({type: 'REMOVE', text: 'Read the docs'});
 
 ReactDOM.render(
-  <div>{title}</div>,
+  <App store={store}/>,
   document.getElementById('app')
 );
 
