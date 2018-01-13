@@ -8,8 +8,13 @@ module.exports = {
     loaders: [{
       test: /\.jsx?$/,
       exclude: /node_modules/,
-      loader: 'react-hot-loader!babel-loader'
-    }]
+      loader: 'react-hot-loader/webpack!babel-loader'
+    },
+    {
+      test: /\.css?$/,
+      loader: ['style-loader', 'css-loader']
+  }
+]
   },
   resolve: {
     extensions: ['*', '.js', '.jsx']
